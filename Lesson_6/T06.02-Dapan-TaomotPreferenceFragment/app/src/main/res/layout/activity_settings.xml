@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hoàn thành (7) Đặt root layout của activity_settings vào SettingsFragment và xóa padding. -->
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_settings"
+    android:name="android.example.com.visualizerpreferences.SettingsFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>

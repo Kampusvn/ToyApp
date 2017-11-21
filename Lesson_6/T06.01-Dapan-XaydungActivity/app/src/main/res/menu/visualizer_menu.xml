@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hoàn thành (2) Thêm thư mục tài nguyên mới tên là menu và tạo visualizer_menu.xml -->
+<!-- Hoàn thành (3) Trong visualizer_menu.xml, tạo menu item chứa 1 item. Id đặt là "action_settings",
+ lưu tiêu đề của nó trong strings.xml, mục này không bao giờ được hiển thị dưới
+ dạng action, và orderInCategory đặt là 100 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

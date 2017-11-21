@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- TODO (2) Tạo file bools.xml trong thư mục res và tạo một boolean cho giá trị mặc định này -->
+    <!-- TODO (3) Cập nhật các giá trị từ file resource, không dùng giá trị hardcode -->
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="show_bass"
+        android:summaryOff="Hidden"
+        android:summaryOn="Shown"
+        android:title="Show Bass" />
+
+</PreferenceScreen>

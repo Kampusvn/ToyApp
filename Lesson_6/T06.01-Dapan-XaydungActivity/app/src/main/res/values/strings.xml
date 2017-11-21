@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Visualize</string>
+
+    <!-- Hoàn thành (4) Thêm string cho Settings -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Giá trị trong SharedPreferences với tùy chọn màu đỏ -->
+    <string name="pref_color_red_value" translatable="false">red</string>
+
+    <!-- Giá trị trong SharedPreferences với tùy chọn màu xanh dương -->
+    <string name="pref_color_blue_value" translatable="false">blue</string>
+
+    <!-- Giá trị trong SharedPreferences với tùy chọn màu xanh lục -->
+    <string name="pref_color_green_value" translatable="false">green</string>
+</resources>

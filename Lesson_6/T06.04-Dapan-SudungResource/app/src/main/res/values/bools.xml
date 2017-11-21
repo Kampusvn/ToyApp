@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hoàn thành (2) Tạo file bools.xml trong thư mục res và tạo một boolean cho giá trị mặc định này -->
+<resources>
+    <bool name="pref_show_bass_default">true</bool>
+</resources>

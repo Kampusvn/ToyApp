@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hoàn thành (3) Trong res->xml, tạo file pref_visualizer -->
+<!-- Hoàn thành (4) Trong pref_visualizer tạo một màn hình tùy chọn có chứa một check box duy nhất
+     Check box này nên có giá trị mặc định là true, key là 'show_bass', summaryOff là Hidden, summaryOn là Show và tiêu đề là 'Show Bass' -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="show_bass"
+        android:summaryOff="Hidden"
+        android:summaryOn="Shown"
+        android:title="Show Bass" />
+
+</PreferenceScreen>
