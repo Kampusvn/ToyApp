@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2016 The Android Open Source Project
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+       http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.datafrominternet.MainActivity">
+
+    <EditText
+        android:id="@+id/et_search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a query, then click Search"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_url_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Click search and your URL will show up here!"
+        android:textSize="22sp" />
+
+    <!--TODO (2) Bao ScrollView bằng FrameLayout-->
+    <!--TODO (3) đẶt width và height của FrameLayout bằng match_parent-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tv_github_search_results_json"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make a search!"
+            android:textSize="18sp" />
+    </ScrollView>
+
+    <!--TODO (4) Thêm TextView hiển thị lỗi-->
+    <!--TODO (5) Đặt text size 22sp-->
+    <!--TODO (6) Gán ID cho TextView là @+id/tv_error_message_display-->
+    <!--TODO (7) Đặt layout_height và layout_width là wrap_content-->
+    <!--TODO (8) Thêm padding 16dp cho TextView hiển thị lỗi -->
+    <!--TODO (9) Dùng strings.xml để đặt text hiển thị lỗi-->
+    <!--TODO (10) Đặt visibility cho TextView là invisible-->
+    <!--TODO (11) Đặt TextView là con của FrameLayout vừa thêm phía trên-->
+
+    <!--TODO (18) Thêm ProgressBar hiển thị tiến trình loading-->
+    <!--TODO (19) Đặt ID cho ProgressBar là @+id/pb_loading_indicator-->
+    <!--TODO (20) Đặt layout_height và layout_width bằng 42dp-->
+    <!--TODO (21) Đặt layout_gravity là center-->
+    <!--TODO (22) Đặt visibility cho ProgressBar là invisible-->
+    <!--TODO (23) Đặt ProgressBar là con của FrameLayout vừa thêm phía trên-->
+</LinearLayout>

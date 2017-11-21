@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2016 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<!--TODO (1) Chuyển ConstraintLayout thành LinearLayout-->
+<!--TODO (2) Định hướng màn hình dọc-->
+<!--TODO (3) Đặt padding trái, phải và bên trên là 16dp-->
+<!--TODO (4) Xóa bỏ dòng khai báo ID-->
+<!--TODO (5) Xóa bỏ dòng xmlns:app declaration-->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--TODO (6) Xóa bỏ TextView này-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        app:layout_constraintRight_toRightOf="@+id/activity_main"
+        app:layout_constraintTop_toTopOf="@+id/activity_main" />
+
+    <!--TODO (7) Thêm view EditText-->
+    <!--TODO (8) Đặt ID cho EditText là @+id/et_search_box-->
+    <!--TODO (9) Đặt text size 22sp-->
+    <!--TODO (10) Đặt width là match_parent và height là wrap_content-->
+    <!--TODO (11) Cung cấp gợi ý cho người dùng là điền truy vấn và bấm search-->
+
+    <!--TODO (12) Thêm một TextView-->
+    <!--TODO (13) Đặt ID cho TextView là @+id/tv_url_display-->
+    <!--TODO (14) Đặt text size 22sp-->
+    <!--TODO (15) Đặt width là wrap_content và height là wrap_content-->
+    <!--TODO (16) Đặt top margin cho TextView là 8dp-->
+    <!--TODO (17) Đặt text thông báo cho người dùng là link tìm kiếm sẽ xuất hiện khi họ nhấn Search-->
+
+    <!--TODO (18) Thêm một ScrollView-->
+    <!--TODO (19) Đặt width là match_parent và height là wrap_content-->
+    <!--TODO (20) Đặt top margin 16dp-->
+
+        <!--TODO (21) Thêm TextView trong ScrollView-->
+        <!--TODO (22) Đặt ID TextView là @+id/tv_github_search_results_json-->
+        <!--TODO (23) Đặt text size 18sp-->
+        <!--TODO (24) Đặt height và width là wrap_content-->
+        <!--TODO (25) Đặt text nhắc người dùng tìm kiếm-->
+
+</android.support.constraint.ConstraintLayout>

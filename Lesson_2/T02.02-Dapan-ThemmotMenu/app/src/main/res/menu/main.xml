@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2016 The Android Open Source Project
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+       http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!--Hoàn thành (2) Tạo menu xml tên là 'main.xml' ở thư mục res->menu-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--Hoàn thành (3) Thêm một menu item vào menu-->
+    <!--Hoàn thành (4) Đặt ID cho menu item là @+id/action_search-->
+    <!--Hoàn thành (5) Đặt orderInCategory là 1-->
+    <!--Hoàn thành (6) Hiển thị item nếu còn chỗ trống (dùng app:showAsAction, không dùng android:showAsAction)-->
+    <!--Hoàn thành (7) Đặt tiêu đề cho chuỗi tìm kiếm ("Search") trong strings.xml-->
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom"
+        android:title="@string/search"/>
+</menu>

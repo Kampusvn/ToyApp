@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2016 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<!--Hoàn thành (1) Chuyển ConstraintLayout thành LinearLayout-->
+<!--Hoàn thành (2) Định hướng màn hình dọc-->
+<!--Hoàn thành (3) Đặt padding trái, phải và bên trên là 16dp-->
+<!--Hoàn thành (4) Xóa bỏ dòng khai báo ID-->
+<!--Hoàn thành (5) Xóa bỏ dòng xmlns:app declaration-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.datafrominternet.MainActivity">
+
+    <!--Hoàn thành (6) Xóa bỏ TextView-->
+
+    <!--Hoàn thành (7) Thêm view EditText-->
+    <!--Hoàn thành (8) Đặt ID cho EditText là @+id/et_search_box-->
+    <!--Hoàn thành (9) Đặt text size 22sp-->
+    <!--Hoàn thành (10) Đặt width là match_parent và height là wrap_content-->
+    <!--Hoàn thành (11) Cung cấp gợi ý cho người dùng là điền truy vấn và bấm search-->
+    <EditText
+        android:id="@+id/et_search_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter a query, then click Search"
+        android:textSize="22sp" />
+
+    <!--Hoàn thành (12) Thêm một TextView-->
+    <!--Hoàn thành (13) Đặt ID cho TextView là @+id/tv_url_display-->
+    <!--Hoàn thành (14) Đặt text size 22sp-->
+    <!--Hoàn thành (15) Đặt width là wrap_content và height là wrap_content-->
+    <!--Hoàn thành (16) Đặt top margin cho TextView là 8dp-->
+    <!--Hoàn thành (17) Đặt text thông báo cho người dùng là link tìm kiếm sẽ xuất hiện khi họ nhấn Search-->
+    <TextView
+        android:id="@+id/tv_url_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Click search and your URL will show up here!"
+        android:textSize="22sp" />
+
+    <!--Hoàn thành (18) Thêm một ScrollView-->
+    <!--Hoàn thành (19) Đặt width là match_parent và height là wrap_content-->
+    <!--Hoàn thành (20) Đặt top margin 16dp-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+
+    <!--Hoàn thành (21) Thêm TextView trong ScrollView-->
+        <!--Hoàn thành (22) Đặt ID TextView là @+id/tv_github_search_results_json-->
+        <!--Hoàn thành (23) Đặt text size 18sp-->
+        <!--Hoàn thành (24) Đặt height và width là wrap_content-->
+        <!--Hoàn thành (25) Đặt text nhắc người dùng tìm kiếm-->
+        <TextView
+            android:id="@+id/tv_github_search_results_json"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make a search!"
+            android:textSize="18sp" />
+    </ScrollView>
+</LinearLayout>
