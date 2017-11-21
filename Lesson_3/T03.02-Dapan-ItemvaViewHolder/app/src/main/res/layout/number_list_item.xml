@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--COMPLETED (1) Create a layout resource in res/layout/ called number_list_item.xml-->
+<!--
+     Copyright (C) 2016 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Hoàn thành (2) Đặt layout gốc là FrameLayout -->
+<!-- Hoàn thành (3) Width của layout sẽ là match_parent và height là wrap_content -->
+<!-- Hoàn thành (4) Đặt padding 16dp -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Hoàn thành (5) Thêm một TextView là con của FrameLayout -->
+    <!-- Hoàn thành (6) Gán ID cho TextView là "@+id/tv_item_number" -->
+    <!-- Hoàn thành (7) Đặt height và width là wrap_content cho TextView -->
+    <!-- Hoàn thành (8) Đặt TextView về vị trí gốc của view cha -->
+    <!-- Hoàn thành (9) Căn giữa TextView theo chiều dọc -->
+    <!-- Hoàn thành (10) Đặt font là monospace -->
+    <!-- Hoàn thành (11) Đặt text size bằng 42sp -->
+    <TextView
+        android:id="@+id/tv_item_number"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|start"
+        android:fontFamily="monospace"
+        android:textSize="42sp"
+        tools:text="#42" />
+</FrameLayout>

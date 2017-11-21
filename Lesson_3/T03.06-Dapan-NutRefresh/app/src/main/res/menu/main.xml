@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--COMPLETED (2) Create a menu resource in res/menu/ called main.xml-->
+<!--
+     Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+
+    <!--Hoàn thành (2) Tạo menu ở res/menu/ called main.xml-->
+    <!--Hoàn thành (3) Thêm item vào menu với ID là action_refresh-->
+    <!--COMPLETED (4) Đặt tiêu đề là "Refresh" bằng strings.xml-->
+    <!--COMPLETED (5) Đặt giá trị orderInCategory là 1 để đảm bảo item này ở vị trí đầu tiên trong danh sách-->
+    <!--COMPLETED (6) Thiết lập app:showAsAction thành ifRoom để hiển thị menu item trong ActionBar nếu có chỗ trống-->
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="1"
+        android:title="@string/action_reset"
+        app:showAsAction="ifRoom"/>
+</menu>
