@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">"Water Reminder"</string>
+
+    <!-- Strings ở MainActivity -->
+    <string name="instructions">
+        Bấm vào cốc sau khi đã uống nước.</string>
+    <string name="water_increment_content_desc">Nhấn để ghi lại sau khi uống nước</string>
+    <string name="charging_plug_content_desc">hình cắm sạc</string>
+
+    <string name="default_water_count">0</string>
+    <string name="default_charge_notification_count">Thông báo khi sạc thiết bị 0 lần</string>
+
+    <plurals name="charge_notification_count">
+        <item quantity="zero">Thông báo khi sạc thiết bị %d lần</item>
+        <item quantity="one">Thông báo khi sạc thiết bị %d lần</item>
+        <item quantity="other">Thông báo khi sạc thiết bị %d lần</item>
+    </plurals>
+
+
+    <!-- Strings cho Notification và Toast -->
+    <string name="water_chug_toast">ỰC ỰC ỰC</string>
+
+    <string name="charging_reminder_notification_title">Thiết bị đang sạc - Hãy đi uống nước</string>
+    <string name="charging_reminder_notification_body">Khi sạc thiết bị là lúc tốt nhất để bạn xách mông lên lấy cốc nước và uống!</string>
+
+</resources>
