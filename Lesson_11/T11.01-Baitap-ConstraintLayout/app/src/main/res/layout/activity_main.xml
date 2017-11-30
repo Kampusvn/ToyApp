@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TODO (17) Bao Constraint layout bằng một ScrollView -->
+<!-- TODO (2) Thay thế Relative layout bằng ConstraintLayout -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO (3) Tạo TextView cho label và tên Passenger -->
+    <!-- TODO (4) Sử dụng tool:text để đặt giá trị cho text -->
+
+    <!-- TODO (5) Tạo ImageView cho hình chữ nhật bên trái -->
+    <!-- TODO (6) Đặt background với giá trị shape_rectangle_stroke từ drawable-->
+
+    <!-- TODO (7) Tạo ImageView phân chia -->
+
+    <!-- TODO (8) Tạo ImageView cho hình chữ nhật bên phải -->
+
+    <!-- TODO (9) Tạo TextView cho mã xuất phát, mã địa điểm đến và mã chuyến bay -->
+
+    <!-- TODO (15) Import hình máy bay vào thư mục drawable và đặt tên là art_plane -->
+    <!-- TODO (16) Tạo ImageView cho hình ảnh máy bay và đặt background là art_plane drawable -->
+
+    <!-- TODO (10) Tạo TextView cho thời gian và các nhãn tương ứng -->
+
+    <!-- TODO (11) Tạo ImageView cho đầu bảng -->
+
+    <!-- TODO (12) Tạo ImageView cho thân bảng -->
+
+    <!-- TODO (13) Tạo TextView cho mỗi label và text field trong bảng -->
+
+    <!-- TODO (14) Tạo ImageView cho QRcode -->
+
+</RelativeLayout>
+
