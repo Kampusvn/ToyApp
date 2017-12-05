@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- Style cho activity textViews được hiển thị dưới dạng một danh sách trên màn hình -->
+    <style name="ActivityLabelStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <!-- TODO (1) Thay màu background cho activity views thành colorPrimaryLight và màu text đổi thành đen -->
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!-- TODO (2) Tạo style mới là "folderStyle" để nhóm các thuộc tính cho text view mail folder -->
+    <!-- Style này nên nhóm tất cả các giá trị thuộc tính được tìm thấy trong inbox view, layout_width, height, v.v ... -->
+
+
+    <!-- TODO (4) Tạo một "inboxStyle" mới kế thừa từ "folderStyle" và thêm một thuộc tính textStyle đậm -->
+
+
+</resources>

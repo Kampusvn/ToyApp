@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Hoàn thành (1) Thay đổi color scheme như sau:
+    colorPrimary là #673AB7,
+    colorPrimaryDark là #512DA8, and
+    colorAccent là #FF9100 -->
+
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#512DA8</color>
+    <color name="colorAccent">#FF9100</color>
+    <!-- Hoàn thành (2) Tạo màu mới là colorPrimaryLight có giá trị là #D1C4E9 -->
+    <color name="colorPrimaryLight">#D1C4E9</color>
+
+</resources>

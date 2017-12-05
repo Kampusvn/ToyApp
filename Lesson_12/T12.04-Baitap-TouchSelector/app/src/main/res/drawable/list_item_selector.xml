@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TODO (1) Tạo mới một drawable resource, đặt tên là list_item_selector, chọn "selector" làm root element -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- TODO (2) Thêm primary light color cho 3 item với trạng thái for: bấm, kích hoạt, và chọn-->
+
+    <!-- TODO (3) Thêm một item nữa cho trạng thái mặc định (không được chọn) -->
+    <!-- Item này nên có màu mặc định = "@android:color/background_light" -->
+
+</selector>

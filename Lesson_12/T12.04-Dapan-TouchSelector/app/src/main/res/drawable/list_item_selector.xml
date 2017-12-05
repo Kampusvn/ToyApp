@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hoàn thành (1) Tạo mới một drawable resource, đặt tên là list_item_selector, chọn "selector" làm root element -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Hoàn thành (2) Thêm primary light color cho 3 item với trạng thái for: bấm, kích hoạt, và chọn-->
+    <item android:drawable="@color/colorPrimaryLight" android:state_pressed="true" />
+    <item android:drawable="@color/colorPrimaryLight" android:state_activated="true" />
+    <item android:drawable="@color/colorPrimaryLight" android:state_selected="true" />
+
+    <!-- Hoàn thành (3) Thêm một item nữa cho trạng thái mặc định (không được chọn) -->
+    <!-- Item này nên có màu mặc định = "@android:color/background_light" -->
+    <item android:drawable="@android:color/background_light" />
+
+</selector>
