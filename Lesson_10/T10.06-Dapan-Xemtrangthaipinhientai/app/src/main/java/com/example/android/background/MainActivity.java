@@ -52,22 +52,22 @@ public class MainActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /** Get the views **/
+        /** Lấy view **/
         mWaterCountDisplay = (TextView) findViewById(R.id.tv_water_count);
         mChargingCountDisplay = (TextView) findViewById(R.id.tv_charging_reminder_count);
         mChargingImageView = (ImageView) findViewById(R.id.iv_power_increment);
 
-        /** Set the original values in the UI **/
+        /** Đặt giá trị mặc định trên UI **/
         updateWaterCount();
         updateChargingReminderCount();
         ReminderUtilities.scheduleChargingReminder(this);
 
-        /** Setup the shared preference listener **/
+        /** Thiết lập shared preference listener **/
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         prefs.registerOnSharedPreferenceChangeListener(this);
 
         /*
-         * Setup and register the broadcast receiver
+         * Tạo và đặng ký broadcast receiver
          */
         mChargingIntentFilter = new IntentFilter();
         mChargingReceiver = new ChargingBroadcastReceiver();
@@ -79,36 +79,36 @@ public class MainActivity extends AppCompatActivity implements
     protected void onResume() {
         super.onResume();
 
-        /** Determine the current charging state **/
-        // COMPLETED (1) Check if you are on Android M or later, if so...
+        /** Lấy trạng thái sạc hiện tại **/
+        // Hoàn thành (1) Kiểm tra phiên bản Android của thiết bị, nếu từ Android 7 trở lên thì...
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            // COMPLETED (2) Get a BatteryManager instance using getSystemService()
+            // Hoàn thành (2) Lấy thể hiện của BatteryManager bằng phương thức getSystemService()
             BatteryManager batteryManager = (BatteryManager) getSystemService(BATTERY_SERVICE);
-            // COMPLETED (3) Call isCharging on the battery manager and pass the result on to your show
-            // charging method
+            // Hoàn thành (3) Gọi isCharging trên battery manager và truyền vào kết quả phương thức show
+            // charging
             showCharging(batteryManager.isCharging());
         } else {
-            // COMPLETED (4) If your user is not on M+, then...
+            // Hoàn thành (4) Nếu thiết bị dưới Android 7 thì...
 
-            // COMPLETED (5) Create a new intent filter with the action ACTION_BATTERY_CHANGED. This is a
-            // sticky broadcast that contains a lot of information about the battery state.
+            // Hoàn thành (5) Tạo mới một intent filter với action ACTION_BATTERY_CHANGED. Đây là một
+            // sticky broadcast chứa nhiều thông tin về trạng thái pin.
             IntentFilter ifilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
-            // COMPLETED (6) Set a new Intent object equal to what is returned by registerReceiver, passing in null
-            // for the receiver. Pass in your intent filter as well. Passing in null means that you're
-            // getting the current state of a sticky broadcast - the intent returned will contain the
-            // battery information you need.
+            // Hoàn thành (6) Thiết lập đối tượng Intent bằng với kết quả trả về bởi registerReceiver và truyền null
+            // cho receiver. Bạn cũng truyền vào intent filter. ChuPassing bằng null nghĩa là bạn đang
+            // lấy trạng thái hiện tại của một sticky broadcast - intent trả về sẽ chứa thông tin về pin mà
+            // ta cần.
             Intent currentBatteryStatusIntent = registerReceiver(null, ifilter);
-            // COMPLETED (7) Get the integer extra BatteryManager.EXTRA_STATUS. Check if it matches
-            // BatteryManager.BATTERY_STATUS_CHARGING or BatteryManager.BATTERY_STATUS_FULL. This means
-            // the battery is currently charging.
+            // Hoàn thành (7) Lấy số nguyên PinManager.EXTRA_STATUS. Kiểm tra xem nó có khớp với
+            // BatteryManager.BATTERY_STATUS_CHARGING hoặc BatteryManager.BATTERY_STATUS_FULL hay không.
+            // Nếu có, nghĩa là pin hiện đang sạc.
             int batteryStatus = currentBatteryStatusIntent.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
             boolean isCharging = batteryStatus == BatteryManager.BATTERY_STATUS_CHARGING ||
                     batteryStatus == BatteryManager.BATTERY_STATUS_FULL;
-            // COMPLETED (8) Update the UI using your showCharging method
+            // Hoàn thành (8) Cập nhật UI bằng phương thức showCharging.
             showCharging(isCharging);
         }
 
-        /** Register the receiver for future state changes **/
+        /** Đăng ký receiver cho các thay đổi trạng thái trong tương lai **/
         registerReceiver(mChargingReceiver, mChargingIntentFilter);
     }
 
@@ -118,8 +118,9 @@ public class MainActivity extends AppCompatActivity implements
         unregisterReceiver(mChargingReceiver);
     }
 
+
     /**
-     * Updates the TextView to display the new water count from SharedPreferences
+     * Cập nhật TextView để hiển thị số đếm mới từ SharedPreferences
      */
     private void updateWaterCount() {
         int waterCount = PreferenceUtilities.getWaterCount(this);
@@ -127,7 +128,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     /**
-     * Updates the TextView to display the new charging reminder count from SharedPreferences
+     * Cập nhật TextView để hiển thị bộ đếm thông báo khi sạc từ SharedPreferences
      */
     private void updateChargingReminderCount() {
         int chargingReminders = PreferenceUtilities.getChargingReminderCount(this);
@@ -138,7 +139,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     /**
-     * Adds one to the water count and shows a toast
+     * Tăng thêm 1 ở bộ đếm và hiển thị Toast
      */
     public void incrementWater(View view) {
         if (mToast != null) mToast.cancel();
@@ -153,14 +154,14 @@ public class MainActivity extends AppCompatActivity implements
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        /** Cleanup the shared preference listener **/
+        /** Dọn dẹp shared preference listener **/
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         prefs.unregisterOnSharedPreferenceChangeListener(this);
     }
 
     /**
-     * This is a listener that will update the UI when the water count or charging reminder counts
-     * change
+     * Đây là một listener cập nhật giao diện người dùng khi water count và
+     * charging reminder counts thay đổi
      */
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {

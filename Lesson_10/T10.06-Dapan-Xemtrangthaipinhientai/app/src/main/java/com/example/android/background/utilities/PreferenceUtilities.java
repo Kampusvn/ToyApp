@@ -20,7 +20,7 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 /**
- * This class contains utility methods which update water and charging counts in SharedPreferences
+ * Lớp này chứa các phương thức hữu ích để cập nhật số lượng nước và số lần sạc trong SharedPreferences
  */
 public final class PreferenceUtilities {
 

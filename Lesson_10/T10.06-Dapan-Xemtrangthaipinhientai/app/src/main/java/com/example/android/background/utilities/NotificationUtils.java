@@ -35,18 +35,17 @@ import com.example.android.background.sync.WaterReminderIntentService;
 
 
 /**
- * Utility class for creating hydration notifications
+ * Lớp tiện ích để tạo thông báo
  */
 public class NotificationUtils {
 
     /*
-     * This notification ID can be used to access our notification after we've displayed it. This
-     * can be handy when we need to cancel the notification, or perhaps update it. This number is
-     * arbitrary and can be set to whatever you like. 1138 is in no way significant.
+     * ID thông báo này có thể được sử dụng để truy cập vào thông báo sau khi hiển thị. Việc này có thể
+	 * hữu ích khi ta cần hủy hoặc cập nhật thông báo. Số này được đặt tùy ý.
      */
     private static final int WATER_REMINDER_NOTIFICATION_ID = 1138;
     /**
-     * This pending intent id is used to uniquely reference the pending intent
+     * Pending intent id này dùng để tham chiếu đến một pending intent
      */
     private static final int WATER_REMINDER_PENDING_INTENT_ID = 3417;
     private static final int ACTION_DRINK_PENDING_INTENT_ID = 1;
@@ -82,7 +81,7 @@ public class NotificationUtils {
         NotificationManager notificationManager = (NotificationManager)
                 context.getSystemService(Context.NOTIFICATION_SERVICE);
 
-        /* WATER_REMINDER_NOTIFICATION_ID allows you to update or cancel the notification later on */
+        /* WATER_REMINDER_NOTIFICATION_ID cho phép bạn cập nhật hoặc hủy thông báo */
         notificationManager.notify(WATER_REMINDER_NOTIFICATION_ID, notificationBuilder.build());
     }
     private static Action ignoreReminderAction(Context context) {

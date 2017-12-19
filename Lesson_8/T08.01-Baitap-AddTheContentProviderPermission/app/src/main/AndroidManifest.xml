@@ -3,7 +3,7 @@
     package="com.kampus.example.quizexample">
 
     <!-- TODO (1) Thêm permission để truy cập DroidTermsExample content provider -->
-    <uses-permission android:name="com.example.kampus.droidtermsexample.TERMS_READ"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
